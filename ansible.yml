@@ -1,0 +1,8 @@
+- name:ansible playbook
+    host=all
+    remote_user:ubuntu
+    become:true
+    task:
+      - name:gatherfacts
+        debug:
+        msg:"hello world"
